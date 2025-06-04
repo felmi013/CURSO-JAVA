@@ -3,6 +3,7 @@ public class HelloWorld {
         String greetings = "Hola Mundo";
         System.err.println("-------------");
         System.out.println(greetings);
+         System.err.println("-------------");
     }
 }
 //// clsddd
