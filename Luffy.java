@@ -7,17 +7,19 @@ public class Luffy {
     long ActualBounty = 3_000_000_00;
     float height = 172f;
     boolean AkumaNoMi = true;
+     System.err.println("-------------");
     String name ="Luffy";
-    
-       
-System.out.println("""
-        Edad
-        Altura %s mts
-        Primera recompensa
-        Recompensa actual
-        ¿Tiene fruta del diablo? %s
-        Tipo %s
-        Nombre %s
-        """.formatted(age,height, birthYear, FirstBounty,ActualBounty, AkumaNoMi, name));
+     System.err.println("-------------");
+    System.out.println("Edad " + age);
+    System.err.println("-------------");
+        System.out.println("Fecha " + birthYear);
+         System.err.println("-------------");
+        System.out.println("Recompensa inicial\n " + FirstBounty);
+         System.err.println("-------------");
+        System.out.println("Recompensa actual " + ActualBounty);
+         System.err.println("-------------");
+        System.out.println("Altura " + height);
+        
+ System.err.println("-------------");
     }
 }
