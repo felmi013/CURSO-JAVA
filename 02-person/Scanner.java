@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.random.RandomGenerator.ArbitrarilyJumpableGenerator;
 
-public class Person2  {
+public class Scanner  {
 
     //Tipos de numeros enteros (datos primitivos)
     //byte  - 1byte  -128 - 127
