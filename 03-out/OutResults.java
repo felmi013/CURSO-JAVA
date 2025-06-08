@@ -3,8 +3,8 @@
 public class OutResults {
     public static void main(String[] args) {
         
-    String name = "Felipe";
-    String surname = "Casado";
+    String name = "Jonh";
+    String surname = "Wik";
     int age = 23;
 
 

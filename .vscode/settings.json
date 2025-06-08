@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "CURSO-JAVA/04-oop",
+        "CURSO-JAVA/03-out",
+        "CURSO-JAVA/02-person",
+        "CURSO-JAVA/01-Hola-Mundo",
+        "blackjack-demo/game"
+    ]
+}

@@ -12,7 +12,7 @@ public class Greetings {
         
         age = scanner.nextInt();
         System.out.println("Hola " + name);
-        System.out.println("Tienes " + age + "Años");
+        System.out.println("Tienes " + age + " Años");
        
         scanner.close();
         scanner.close();

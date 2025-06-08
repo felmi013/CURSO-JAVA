@@ -2,21 +2,25 @@
 public class Out {
 
     public static void main(String[] args) {
+       
         
-    String name = "Felipe";
-    String surname = "Casado";
+    String name = "John";
+    String surname = "Wik";
     int age = 23;
 
 
     //println -> expresión
+    System.err.println("--------------------------");
     System.out.println("Hola " + name + " "+ surname + "\n ¿como estas a tus " + age + "años?");
 
 
     //print f -> expresion, variables...
+    System.err.println("--------------------------");
 
-    System.out.printf("Hola %s %s \n ¿como estás a tus %s años, en la flor de la juventud?", name, surname , age );
+    System.out.printf("Hola %s %s \n ", name, surname , age );
 
     //println -> template string
+    System.err.println("--------------------------");
     System.out.println("""
         Hola %s %s
         Hola \n ¿como estás a tus %s años?
