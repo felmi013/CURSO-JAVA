@@ -1,4 +1,4 @@
-public class Car2 {
+public class Car1 {
 
     static int numCars = 0;
 
@@ -10,7 +10,7 @@ public class Car2 {
         String color;
         boolean isAuto;
 
-        Car2(
+        Car1(
             String brand,
             char type,
             int numSeats,

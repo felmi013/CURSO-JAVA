@@ -14,8 +14,8 @@ public class Main {
         System.out.println("Is enemy?" + character2.enemy);
 
 
-        Car2 car1 = new Car2("Toyota", 'S' , 5 ,5, "Verde", true);
-        Car2 car2 = new Car2("Lexus", 'D', 4, 5, "Negro", true);
+        Car1 car1 = new Car1("Toyota", 'S' , 5 ,5, "Verde", true);
+        Car1 car2 = new Car1("Lexus", 'D', 4, 5, "Negro", true);
         car1.showInfo();
         car2.showInfo();
 

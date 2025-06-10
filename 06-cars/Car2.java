@@ -1,14 +1,14 @@
 public class Car2 {
 
     static int numCars = 0;
-
-        int id;
-        String brand;
-        char type;
-        int numSeats;
-        int numDors;
-        String color;
-        boolean isAuto;
+    
+    private    int id;
+   private     String brand;
+    private    char type;
+     private   int numSeats;
+    private    int numDors;
+    private    String color;
+    private    boolean isAuto;
 
         Car2(
             String brand,
@@ -26,6 +26,8 @@ public class Car2 {
             this.numDors = numDors;
             this.color = color;
             this.isAuto = isAuto;
+            numCars= numCars +1 ;
+            this.id =numCars;
            
 
         }
@@ -39,6 +41,7 @@ public class Car2 {
                 Numero de puertas %s;
                 Color %s;
                 Is automatico: %s
+                Tipo %s
                 =====================
 
                    """;
@@ -49,7 +52,8 @@ public class Car2 {
                 numSeats,
                 numDors,
                 color,
-                isAuto));
+                isAuto,
+                type));
 
         }
     }
