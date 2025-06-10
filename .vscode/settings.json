@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "05-funciones",
         "04-oop",
-        "05-funciones"
+        "06-cars"
     ]
 }
