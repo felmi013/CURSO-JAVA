@@ -1,31 +1,60 @@
 import java.util.Scanner;
 
 public class Shop {
-    
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int packages = scanner.nextInt();
-    scanner.close();
 
-    if (packages <5){
-        System.out.println("No se puede realizar el pedido");
-    }else if (packages <10 ){
-        System.out.println("Se aokuca un descuento del 5%");
-    }else if (packages >= 10 &&packages<= 20 ) {
-        System.out.println("Se aplica un descuento de 10%");
-    }else if (packages >20) {
-        System.out.println("Se aplica un descuento de 15%");
-    }    
-        
+    static final double PACKET_PRICE = 20;
+
+    static int getDataByScanner() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.printf("Vendemos paquetes de pantalones y camisetas a %s EU\n", PACKET_PRICE);
+        System.out.println("Dime el numero de paquetes del pantalones");
+        int packets = scanner.nextInt();
+        System.out.println("");
+        scanner.close();
+        return packets;
+
     }
 
+    public static void main(String[] args) {
+        int numPackets = getDataByScanner();
 
-        }
-         
+        System.out.println(numPackets);
+        double discount;
+        int shipingByPacket;
         
 
+        if (numPackets < 5 ) {
+            System.err.println("Número de paquetes insuficiente");
+            return;
+        }else if (numPackets < 10) {
+           discount = 0.05;
+            shipingByPacket = 10;
+
+        }else if (numPackets < 20) {
+            discount = 0.1;
+            shipingByPacket = 5;
+            
+        }else {
+            discount = 0.15;
+            shipingByPacket = 0;
+        }
+            // validos para los casos 2,3 y 4
+        double total = numPackets * PACKET_PRICE;
+        double finalDiscount = total*discount;
+        double totalShipping= numPackets* shipingByPacket;
+        double finales = total - finalDiscount+totalShipping;
+
+    }
+           
+    System.out.println("""
+            Numero de paquetes            %d
+            Precio total del producto    %.2f
+            Descuento aplicado           %.2f
+            Gastos de envio              %.2f
+            --------------------------------
+            TOTAL                          %.2f
+            """.formatted(numPackets, total, finalDiscount, totalShipping, finales));
+    }
+    
 
 
-  
-
-  
