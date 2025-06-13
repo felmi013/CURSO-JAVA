@@ -46,7 +46,7 @@ public class Shop {
 
     }
            
-    System.out.println("""
+    System.out.printf("""
             Numero de paquetes            %d
             Precio total del producto    %.2f
             Descuento aplicado           %.2f

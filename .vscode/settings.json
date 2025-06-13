@@ -1,12 +1,13 @@
 {
     "java.project.sourcePaths": [
-        "10-EvenOdds",
+        "12-iteration-loops",
+        "10-operators",
         "09-Conditions",
         "08-Operators",
         "07-Shapes",
         "06-cars",
         "05-funciones",
         "04-oop",
-        "10-operators"
+        ""
     ]
 }
