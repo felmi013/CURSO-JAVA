@@ -22,7 +22,10 @@ public class Matrix {
         
     }
 
-    matrix(){
+    static void matrix(){
+
+
+        String[][] matrixNames = {{"Pepe", "Luisa" , "Ramon"}, {"Perez", "Gomez" , " Lopez"}, {"Ruiz" , "Martin"}};
         int[][] matrixNumber =  new int [3][3];
 
         matrixNumber [0][0] = 22;
@@ -38,13 +41,22 @@ public class Matrix {
 
         for (int i = 0; i < matrixNumber.length; i++) {
             for (int j = 0; j < matrixNumber[0].length; j++) {
-                         System.out.println(matrixNumber[i][j]); 
+                         System.out.print(matrixNumber[i][j] + "");
                //     System.out.println(matrixNumber[i][0]);
            // System.out.println(matrixNumber[i][1]);
            // System.out.println(matrixNumber[i][2]);
             }
-          
+          System.out.println("");
             
+        }
+
+        for (int[] row : matrixNumber) {
+            for (int item :row) {
+                System.out.print(item + " ");
+
+                
+            }
+            System.out.println(" ");
         }
     }
 
